@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swipe between Divs</title>
+<style>
+.container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content {
+  width: 100%;
+  display: inline-block;
+  margin-left: 0;
+}
+
+button {
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="content" id="content1">
+    <!-- Content for first div -->
+    <h2>Content 1</h2>
+    <p>This is the content of the first div.</p>
+  </div>
+  <div class="content" id="content2">
+    <!-- Content for second div -->
+    <h2>Content 2</h2>
+    <p>This is the content of the second div.</p>
+  </div>
+  
+  <div class="content" id="content2">
+    <!-- Content for second div -->
+    <h2>Content 3</h2>
+    <p>This is the content of the second div.</p>
+  </div>
+</div>
+
+<button id="prevBtn">Previous</button>
+<button id="nextBtn">Next</button>
+
+<link href="bootstrap-4.3.1.min.css" rel="stylesheet">
+<script src="jquery.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap-4.3.1.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  var currentContent = 1;
+  var totalContents = $(".content").length;
+
+  $("#nextBtn").click(function() {
+    alert(totalContents.length)
+    if (currentContent < totalContents) {
+      $("#content" + currentContent).animate({ "margin-left": "-100%" });
+      $("#content" + (currentContent + 1)).animate({ "margin-left": "0%" });
+      currentContent++;
+    }
+  });
+
+  $("#prevBtn").click(function() {
+    if (currentContent > 1) {
+      $("#content" + currentContent).animate({ "margin-left": "100%" });
+      $("#content" + (currentContent - 1)).animate({ "margin-left": "0%" });
+      currentContent--;
+    }
+  });
+});
+</script>
+</body>
+</html>
