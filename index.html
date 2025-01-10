@@ -158,28 +158,22 @@
     </header>
     <section class="gradient-bg text-white min-h-screen flex relative overflow-hidden">
         <!-- Left-Side Indicators with Material Icons -->
-        <div class="absolute left-0 top-1/4 transform -translate-y-1/4 z-30 bg-gradient-to-b from-black via-black to-transparent border border-gray-700 rounded-lg p-2 shadow-xl w-1/4 sm:w-1/6 md:w-1/5">
-            <!-- Added margin-top to avoid overlap -->
-            <ul id="sidebar-indicator" class="space-y-4 overflow-hidden mt-1">
-                <!-- Indicator 1 (Dashboard Icon) -->
+        <div class="absolute left-4 top-1/4 transform -translate-y-1/4 z-30 bg-gradient-to-b from-black via-black to-transparent border border-gray-700 rounded-lg p-4 shadow-xl">
+            <ul id="sidebar-indicator" class="space-y-8">
                 <li class="indicator-item active" data-slide="0">
-                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300 text-3xl">dashboard</span>
+                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300">dashboard</span>
                 </li>
-                <!-- Indicator 2 (Trending Icon) -->
                 <li class="indicator-item" data-slide="1">
-                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300 text-3xl">trending_up</span>
+                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300">trending_up</span>
                 </li>
-                <!-- Indicator 3 (News Icon) -->
                 <li class="indicator-item" data-slide="2">
-                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300 text-3xl">rss_feed</span>
+                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300">rss_feed</span>
                 </li>
-                <!-- Indicator 4 (Compare Icon) -->
                 <li class="indicator-item" data-slide="3">
-                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300 text-3xl">compare_arrows</span>
+                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300">compare_arrows</span>
                 </li>
-                <!-- Indicator 5 (Risk Management Icon) -->
                 <li class="indicator-item" data-slide="4">
-                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300 text-3xl">shield</span>
+                    <span class="material-icons icon text-gray-400 hover:text-indigo-500 transition duration-300">shield</span>
                 </li>
             </ul>
         </div>
@@ -194,76 +188,215 @@
             <div id="carousel" class="transition-transform duration-500 ease-in-out h-full">
     
                 <!-- Slide 1: Cryptocurrency Market Analysis with AI -->
-                <div class="carousel-slide h-screen text-center flex flex-col justify-center px-2" data-aos="fade-up" data-aos-duration="800">
+                <div class="carousel-slide h-screen text-center flex flex-col justify-center px-4" data-aos="fade-up" data-aos-duration="800">
                     <div class="relative z-10 text-white">
-                        <h2 class="text-2xl sm:text-4xl font-extrabold mb-4 text-shadow-md tracking-wide" data-aos="fade-down" data-aos-duration="800">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-shadow-md tracking-wide" data-aos="fade-down" data-aos-duration="800">
                             Easily Track and Grow Your Crypto
                         </h2>
-                        <p class="text-sm sm:text-lg mb-4 opacity-90 max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+                        <p class="text-lg sm:text-xl mb-6 opacity-90 max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
                             Your all-in-one tool for tracking crypto trends and reducing risks.
                         </p>
-                        <div class="flex justify-center mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                            <button class="bg-indigo-600 text-white text-sm sm:text-lg py-3 px-8 rounded-full font-bold shadow-xl border-4 border-indigo-500 hover:bg-indigo-700 hover:border-indigo-400 transition duration-300 transform hover:scale-110">
+                        <div class="flex justify-center mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <button class="bg-indigo-600 text-white text-lg py-4 px-12 rounded-full font-bold shadow-xl border-4 border-indigo-500 hover:bg-indigo-700 hover:border-indigo-400 transition duration-300 transform hover:scale-110">
                                 Try it Now
                             </button>
                         </div>
-                        <div class="flex justify-center space-x-4 sm:space-x-6 mt-6" style="transform: scale(1.2);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div class="flex justify-center space-x-6 mt-6" style="transform: scale(1);" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl icon mb-2">trending_up</span>
-                                <p class="text-sm sm:text-base font-semibold">Track Crypto Trends</p>
+                                <span class="material-icons text-4xl icon mb-2">trending_up</span>
+                                <p class="text-base font-semibold">Track Crypto Trends</p>
                             </div>
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl mb-2">show_chart</span>
-                                <p class="text-sm sm:text-base font-semibold">AI-Driven Insights</p>
+                                <span class="material-icons text-4xl mb-2">show_chart</span>
+                                <p class="text-base font-semibold">AI-Driven Insights</p>
                             </div>
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl mb-2">timeline</span>
-                                <p class="text-sm sm:text-base font-semibold">Minimize Crypto Risks</p>
+                                <span class="material-icons text-4xl mb-2">timeline</span>
+                                <p class="text-base font-semibold">Minimize Crypto Risks</p>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <!-- Repeat similar structure for other slides, but scale down text and icons even more -->
-                <!-- Example for Slide 2 -->
-                <div class="carousel-slide h-screen flex flex-col justify-center items-end px-2 sm:px-6">
+                <!-- Slide 2: Smarter Crypto Decisions -->
+                <div class="carousel-slide h-screen flex flex-col justify-center items-end px-6 lg:px-20">
                     <div class="relative z-10 text-white text-right w-full lg:w-3/4">
-                        <h2 class="text-2xl sm:text-4xl font-bold mb-4 text-shadow-md tracking-wide">
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-shadow-md tracking-wide">
                             Make Smarter Crypto Decisions, Effortlessly
                         </h2>
-                        <p class="text-sm sm:text-lg mb-4 opacity-90">
+                        <p class="text-lg sm:text-xl mb-6 opacity-90">
                             Get clear crypto recommendations to help you grow your investments and stay ahead.
                         </p>
-                        <div class="flex justify-end mb-4">
-                            <button class="bg-indigo-600 text-white py-3 px-8 sm:py-4 sm:px-10 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                        <div class="flex justify-end mb-6">
+                            <button class="bg-indigo-600 text-white py-3 px-10 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
                                 Try it Now
                             </button>
                         </div>
-                        <div class="flex justify-end space-x-4 sm:space-x-6 mt-6">
+                        <div class="flex justify-end space-x-6 mt-6">
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl mb-2">trending_up</span>
-                                <p class="text-sm sm:text-base font-semibold">Track Market Trends</p>
+                                <span class="material-icons text-4xl mb-2">trending_up</span>
+                                <p class="text-base font-semibold">Track Market Trends</p>
                             </div>
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl mb-2">show_chart</span>
-                                <p class="text-sm sm:text-base font-semibold">Get Smart Recommendations</p>
+                                <span class="material-icons text-4xl mb-2">show_chart</span>
+                                <p class="text-base font-semibold">Get Smart Recommendations</p>
                             </div>
                             <div class="text-center">
-                                <span class="material-icons text-3xl sm:text-4xl mb-2">timeline</span>
-                                <p class="text-sm sm:text-base font-semibold">Stay on Top of Risks</p>
+                                <span class="material-icons text-4xl mb-2">timeline</span>
+                                <p class="text-base font-semibold">Stay on Top of Risks</p>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <!-- Continue with similar adjustments for other slides -->
+                <!-- Slide 3: Crypto News Insights -->
+                <div class="carousel-slide h-screen flex flex-col justify-center items-start px-6 lg:px-20">
+                    <div class="relative z-10 text-white text-left w-full lg:w-3/4">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-shadow-md tracking-wide">
+                            Stay Ahead with Crypto News Insights
+                        </h2>
+                        <p class="text-lg sm:text-xl mb-6 opacity-90">
+                            Get the latest crypto news analyzed to help you make smarter decisions.
+                        </p>
+                        <div class="flex justify-start mb-6">
+                            <button class="bg-indigo-600 text-white py-3 px-10 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                                Try it Now
+                            </button>
+                        </div>
+                        <div class="flex justify-start space-x-6 mt-6">
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">rss_feed</span>
+                                <p class="text-base font-semibold">Latest News</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">insights</span>
+                                <p class="text-base font-semibold">Smart Analysis</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">trending_up</span>
+                                <p class="text-base font-semibold">Market Impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 4: Compare Crypto Assets -->
+                <div class="carousel-slide h-screen flex flex-col justify-center items-end px-6 lg:px-20">
+                    <div class="relative z-10 text-white text-right w-full lg:w-3/4">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-shadow-md tracking-wide">
+                            Compare Crypto Assets with Ease
+                        </h2>
+                        <p class="text-lg sm:text-xl mb-6 opacity-90">
+                            Compare different crypto assets side by side to make better decisions.
+                        </p>
+                        <div class="flex justify-end mb-6">
+                            <button class="bg-indigo-600 text-white py-3 px-10 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                                Try it Now
+                            </button>
+                        </div>
+                        <div class="flex justify-end space-x-6 mt-6">
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">swap_horiz</span>
+                                <p class="text-base font-semibold">Side-by-Side Comparison</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">analytics</span>
+                                <p class="text-base font-semibold">Data-Driven Insights</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">balance</span>
+                                <p class="text-base font-semibold">Compare Risk & Reward</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 5: Risk Management Dashboard -->
+                <div class="carousel-slide h-screen text-center flex flex-col justify-center px-4">
+                    <div class="relative z-10 text-white">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-shadow-md tracking-wide">
+                            Master Your Crypto Risks with Confidence
+                        </h2>
+                        <p class="text-lg sm:text-xl mb-6 opacity-90 max-w-3xl mx-auto">
+                            Track, analyze, and reduce risks in your crypto portfolio.
+                        </p>
+                        <div class="flex justify-center mb-6">
+                            <button class="bg-indigo-600 text-white py-4 px-12 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                                Try it Now
+                            </button>
+                        </div>
+                        <div class="flex justify-center space-x-6 mt-6">
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">shield</span>
+                                <p class="text-base font-semibold">Track Portfolio Risks</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">assessment</span>
+                                <p class="text-base font-semibold">Analyze Portfolio Performance</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="material-icons text-4xl mb-2">bar_chart</span>
+                                <p class="text-base font-semibold">Diversify & Reduce Volatility</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
             </div>
         </div>
     </section>
     
+    <!-- Custom CSS -->
+    <style>
+        /* Mobile Styling */
+        @media (max-width: 768px) {
+            .carousel-slide h2 {
+                font-size: 1.875rem;
+            }
     
-
+            .carousel-slide p {
+                font-size: 1rem;
+            }
+    
+            .material-icons.icon {
+                font-size: 2.5rem;
+            }
+    
+            .indicator-item .icon {
+                transform: scale(1);
+            }
+    
+            .bg-glass {
+                backdrop-filter: blur(6px);
+                background: rgba(255, 255, 255, 0.05);
+            }
+    
+            .gradient-bg {
+                background: linear-gradient(135deg, #4f46e5, #6366f1);
+            }
+    
+            .carousel-slide {
+                min-height: 300px;
+            }
+        }
+    </style>
+    
+    
+        <!-- Styles for Sidebar and Animation -->
+        <style>
+            .animate-slide-up {
+                transform: translateY(50px);
+                opacity: 0;
+                animation: slideUp 1s forwards;
+            }
+    
+            @keyframes slideUp {
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        </style>
     <!-- Script for Carousel -->
     <script>
         const carousel = document.getElementById('carousel');
